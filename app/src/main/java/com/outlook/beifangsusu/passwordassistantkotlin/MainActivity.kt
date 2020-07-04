@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.FrameLayout
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentContainerView
 import com.outlook.beifangsusu.passwordassistantkotlin.fragments.LoginFragment
+import com.outlook.beifangsusu.passwordassistantkotlin.fragments.RegisterFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         // Check that the activity is using the layout version with
         // the fragment_container FrameLayout
-        if (findViewById<FrameLayout>(R.id.fragment_container) != null) {
+        if (findViewById<FragmentContainerView>(R.id.fragment_container) != null) {
 
             // However, if we're being restored from a previous state,
             // then we don't need to do anything and should return or else
@@ -24,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             // Create a new Fragment to be placed in the activity layout
-            val firstFragment = LoginFragment()
+            val firstFragment = RegisterFragment()
 
             // In case this activity was started with special instructions from an
             // Intent, pass the Intent's extras to the fragment as arguments

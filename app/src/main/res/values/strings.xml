@@ -11,4 +11,8 @@
     <string name="login_failed">"Login failed"</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- register fragment -->
+    <string name="register_password">输入密码</string>
+    <string name="register_repeat_password">重复密码</string>
 </resources>
